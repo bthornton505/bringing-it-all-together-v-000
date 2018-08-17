@@ -42,6 +42,10 @@ class Dog
     dog 
   end 
   
+  def self.new_from_db
+    
+  end 
+  
   def self.find_by_id(id)
     sql = <<-SQL
       SELECT * FROM dogs WHERE id = ? LIMIT 1 
